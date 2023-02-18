@@ -43,8 +43,4 @@ public class ClientesController {
          return ResponseEntity.ok(clientesDto);
     }
 
-
-
-
-
 }
