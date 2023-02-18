@@ -30,7 +30,8 @@ public class Pr_credito {
     private String COD_PLAN_INVERSION;
     private Long COD_PLAZO;
     private String COD_MONEDA;
-    private String COD_CLIENTE;
+    @Column(name = "COD_CLIENTE",nullable = false)
+    private String codCliente;
     private String COD_TASA_INT;
     @Column(name = "COD_USUARIO",nullable = false)
     private String codUsuarios;

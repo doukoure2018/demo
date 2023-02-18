@@ -9,11 +9,13 @@ public interface Pr_creditosService {
     Pr_creditoDto createCreditos(Pr_creditoDto pr_creditoDto);
 
     List<Pr_creditoDto> getAllCreditosByUsuarios(String codUsuarios);
-    Pr_creditoDto getCreditos(Long creditosId,String usuariosId);
+    Pr_creditoDto getCreditos(Long creditosId);
 
     Pr_creditoDto getMaxRowCredito();
 
     Pr_creditoDto updateCreditos(Long creditosId,Long usuariosId,Pr_creditoDto pr_creditoDto);
 
     void deleteCreditos(long creditosId,long usuariosId);
+
+    List<Pr_creditoDto> getAllCreditosByClientes(String codCliente);
 }

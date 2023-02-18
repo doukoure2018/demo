@@ -43,9 +43,10 @@ public class Pr_creditosServiceImp implements Pr_creditosService {
     }
 
     @Override
-    public Pr_creditoDto getCreditos(Long creditosId, String usuariosId) {
+    public Pr_creditoDto getCreditos(Long creditosId) {
         return null;
     }
+
 
     @Override
     public Pr_creditoDto getMaxRowCredito() {
@@ -64,6 +65,13 @@ public class Pr_creditosServiceImp implements Pr_creditosService {
     @Override
     public void deleteCreditos(long creditosId, long usuariosId) {
 
+    }
+
+    @Override
+    public List<Pr_creditoDto> getAllCreditosByClientes(String codCliente) {
+        List<Pr_credito> pr_creditos=creditosRepository.findAllByCodCliente(codCliente);
+        return pr_creditos.stream().map((pr_credito)->mapToDto(pr_credito))
+                .collect(Collectors.toList());
     }
 
     //Convert Entity into Dto

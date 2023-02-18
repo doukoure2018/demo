@@ -1,8 +1,6 @@
 package com.sample.demo.controller;
 
-import com.sample.demo.entity.TypeCredit;
 import com.sample.demo.payload.TypeCreditDto;
-import com.sample.demo.payload.TypeCreditResponse;
 import com.sample.demo.service.TypeCreditService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

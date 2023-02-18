@@ -1,11 +1,9 @@
 package com.sample.demo.service.impl;
 
 import com.sample.demo.entity.Clientes;
-import com.sample.demo.entity.SG_USUARIOS;
 import com.sample.demo.exception.ResourceNotFoundException;
 import com.sample.demo.payload.ClientesDto;
 import com.sample.demo.payload.ClientesResponse;
-import com.sample.demo.payload.SG_USUARIOSDto;
 import com.sample.demo.repository.ClientesRepository;
 import com.sample.demo.service.ClientesService;
 import org.modelmapper.ModelMapper;

@@ -14,9 +14,9 @@ public class Pr_creditoDto {
     private String COD_PLAN_INVERSION;
     private Long COD_PLAZO;
     private String COD_MONEDA;
-    private String COD_CLIENTE;
+    private String codCliente;
     private String COD_TASA_INT;
-    private String COD_USUARIO;
+    private String codUsuarios;
     private String COD_ACTIVIDAD;
     private String COD_SUBACTIV;
     private String COD_REFERENTE;

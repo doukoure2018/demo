@@ -35,6 +35,12 @@ public class Pr_creditosController {
         return ResponseEntity.ok(creditosService.getMaxRowCredito());
     }
 
+    @GetMapping("digi-crg/v1/{codCliente}/creditos")
+    public ResponseEntity<List<Pr_creditoDto>> getAllCreditosByCodCliente(@PathVariable(name = "codCliente") String codCliente)
+    {
+        return ResponseEntity.ok(creditosService.getAllCreditosByClientes(codCliente));
+    }
+
 
 
 }

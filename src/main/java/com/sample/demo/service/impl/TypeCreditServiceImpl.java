@@ -24,7 +24,6 @@ public class TypeCreditServiceImpl implements TypeCreditService {
     @Override
     public List<TypeCreditDto> getAllTypeCredito() {
         List<TypeCredit> typeCredits=typeCreditRepository.findAll();
-
         return typeCredits.stream().map((typeCredit) -> modelMapper.map(typeCredit, TypeCreditDto.class))
                 .collect(Collectors.toList());
     }

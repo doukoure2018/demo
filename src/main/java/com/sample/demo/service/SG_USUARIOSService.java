@@ -1,6 +1,5 @@
 package com.sample.demo.service;
 
-import com.sample.demo.entity.SG_USUARIOS;
 import com.sample.demo.payload.SG_USUARIOSDto;
 import com.sample.demo.payload.SG_USUARIOSResponse;
 
